@@ -1,0 +1,188 @@
+﻿/*CSS436 Program 5 - Autumn 2019
+    Conrad Dudziak, Rithik Bansal, McKinley Melton
+    This Program is a website that uses the NASA api to display facts and images about space.
+    This file contains the CSS that styles the website.
+*/
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin: 0;
+    background: url(../images/pic1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-color: #fff;
+    border: solid;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+#about {
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+    color: white;
+    background-color: black;
+    border: solid;
+    border-color: white;
+    font-size: 18pt;
+    display: inline-block;
+}
+
+#aboutParent {
+    text-align: center;
+}
+
+#twitterImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px 0 0;
+}
+
+#POTD {
+    float: left;
+}
+
+#Asteroids {
+    float: right;
+}
+
+#Twitter {
+    margin: 20px 0 0 0;
+    background-color: aliceblue;
+    padding: 0 0 5px 0;
+}
+
+#Table1, tr {
+    background-color: #fff;
+}
+
+#Table1, caption {
+    color: #fff;
+    text-align: center;
+}
+
+#title {
+    padding: 0;
+    margin: 100px 0 125px 0;
+}
+
+h1 {
+    color: #fff;
+    font-family: Rockwell, Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    font-weight: normal;
+    line-height: 60px;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000;
+    margin: 10px 0 24px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #4800ff;
+    color: #fff;
+    font-size:18px;
+    border-radius: 20px;
+}
+
+.loginbox inpit[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.section {
+    color: #fff;
+}
+
+#Twitter p {
+    color: black;
+    text-align: center;
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+.container {
+    width: auto;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
